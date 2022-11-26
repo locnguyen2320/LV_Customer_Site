@@ -1,0 +1,22 @@
+
+
+:root{
+  --black-color:#2c2c2c;
+  --white-color:#fff;
+  --primary-color:#FFEFE7;
+  --red-color:#FF3535;
+  --grey-color:#f3f3f3;
+  --border-color:#999999;
+
+}
+*,
+*::before,
+*::after{
+  margin:0;
+  padding:0;
+  box-sizing: inherit;
+}
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}

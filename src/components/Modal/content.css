@@ -1,0 +1,78 @@
+/* popup */
+.popup{
+  max-width: 760px;
+}
+.popup-footer{
+  border-top: 1px solid var(--border-color);
+}
+.popup-close {
+  border-bottom: 1px solid var(--border-color);
+}
+.popup-close button{
+  font-size: 2rem;
+  font-weight: 800;
+  color: #888;
+}
+.popup .sale{
+  background-color: var(--red-color);
+  display: inline-block;
+  padding: 3px 10px;
+  color: var(--white-color);
+  border-radius: 6px;
+  position: relative;
+}
+.popup .sale::before{
+  position: absolute;
+  right: -26px;
+  top: 0;
+  height: 100%;
+  content: "";
+  display: block;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--red-color);
+}
+.popup .price-current{
+  font-size: 2rem;
+  font-weight: 500;
+}
+.popup .btn-size{
+  width: 45px;
+  height: 35px;
+  line-height: 35px;
+
+}
+@keyframes zoom {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 5454;
+}
+
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateY(-80px);
+}
